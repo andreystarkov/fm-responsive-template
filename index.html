@@ -13,37 +13,32 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
 
     <script src="js/snap.svg-min.js"></script>
+
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
+
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/lineicons/style.css" />
     <link rel="stylesheet" type="text/css" href="css/fullwidth-slider.css" />
 
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
 
     <script src="js/jquery.js"></script>
     <script src="js/library.js"></script>
-    <script src="js/script.js"></script>
+
     <script src="js/waypoints.min.js"></script>
     <script src="js/retina.js"></script>
     <script src="js/vendor/jquery.transit.min.js"></script>
     <script src="js/fullwidth-slider.js"></script>
+    <script src="js/script.js"></script>
 
-    <script>
-    $(function() {
-         $("#link-1").click(function() {
-            alert('sa');
-            $('html, body').animate({
-                scrollTop: $("#step-2").offset().top
-            }, 2000);
-        });
-    });
-    </script>
     <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
         <script src="js/respond.js"></script>
     <![endif]-->
+
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/snap.svg-min.js"></script>
     <script src="js/less-1.7.5.min.js"></script>
@@ -99,8 +94,7 @@
                             <p>One out of every five Californians require moving services each year. Now that you have found yourself among this group, you can make your move a positive and exciting experience with Finch Movers. The key to a successful move is preparing properly for it.</p>
 
                             <div class="buttons-wrapper">
-                                <a href="#step-1" class="button">Free Estimate</a>
-
+                                <a href="#step-1" id="btn-es-go" class="button">Free Estimate <i class="ico" data-icon="&#xe01a;"></i></a>
                             </div>
                         </div>
                         <!-- /.header-wrapper -->
@@ -113,7 +107,7 @@
 
 
 
-        <div class="spanning">
+        <div class="spanning section-cars">
             <div class="promo clearfix">
                 <div class="wrap">
                     <div class="promo-wrapper clearfix">
@@ -138,7 +132,7 @@
                             <p>Proudly servicing entire California. Local Movers California provide professional and efficient moving solutions.</p>
                         </div>
 
-                        <div class="promo-column" id="long">
+                        <div class="promo-column waypoint" id="long">
                             <img src="images/5.png" width="273" style="width:273px" alt="">
                             <h5>Long Distance Movers</h5>
                             <p>Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. </p>
@@ -147,12 +141,12 @@
                 </div>
             </div>
 
-            <div class="box-light clearfix" id="step-1">
+            <div class="box-light clearfix waypoint" id="estimate">
                 <div class="wrap box-estimate">
                     <div class="box-light-content clearfix">
                         <h2>Free Estimate</h2>
-                        <p>Get the seamless and stress-free move of your belongings. We'll contact you as soon as possible.
-             </p>
+                        <p>Get the seamless and stress-free move of your belongings. We'll contact you as soon as possible.</p>
+                       
                    <!--     <div class="box-light-button clearfix">
                             <a href="#" class="button button-download">
                                 <span class="button-download-title">Download for</span>
@@ -164,14 +158,14 @@
                             </a>
                         </div> -->
                     </div>
-                <div class="box-form">
+                <div class="box-form waypoint">
                     <div class="forms-form clearfix">
                         <form action="">
                             <input type="email" placeholder="First Name" class="input-text">
                             <input type="email" placeholder="Last Name" class="input-text">
                             <input type="email" placeholder="E-Mail Address" class="input-text">
                             <input type="email" placeholder="Phone Number" class="input-text">
-                            <input type="button" class="button button-submit" style="width: 100%" value="Get a Free Quote!">
+                            <button class="button button-submit" style="width: 100%"><i class='ico li_paperplane'></i> Get a Free Quote!</button>
                         </form>
                     </div>
                     </div>
@@ -179,7 +173,7 @@
 
             </div>
 
-            <div class="slide-1 clearfix img-truck-1 box-img">
+            <div class="slide-1 clearfix img-truck-1 box-img waypoint">
                 <div class="wrap">
                     <div class="box-light-content clearfix">
                         <h2>they love us</h2>
@@ -194,7 +188,7 @@
 
             <div class="comments clearfix bg-green">
                 <div class="wrap">
-                    <div class="tab">
+                    <div class="tab waypoint">
                         <div class="box visible">
                             <h4>Jennifer S. enjoying <a href="#">Finch Moving</a></h4>
                             <p>
@@ -336,7 +330,7 @@
     <!-- /.main -->
     <footer>
         <div class="wrap">
-            <p>&copy; 2014 Walk &amp; Ride, All Rights Reserved</p>
+          
         </div>
         <!-- /.wrap -->
     </footer>
