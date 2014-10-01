@@ -1,15 +1,67 @@
+html {
+    height: 100%;
+    background: white;
+}
 
-html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,dfn,del,p,blockquote,fieldset,input,textarea,select,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,button,canvas,video {
-    margin: 0;
-    padding: 0;
+a { transition: 0.5s ease-in-out all; }
+
+body {
+    height: 100%;
+    font: 16px/28px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
-h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,th,dfn,del {
-    font-weight: normal;
-    font-style: normal;
+
+.overflow-hidden {
+    overflow: hidden;
+    display: block;
 }
-ul,ol {
-    list-style: none;
+
+.comments .tab-prev,.comments .tab-next,.button-download:after {
+    background: url(../images/sprite.png) 0 0 no-repeat;
 }
+
+.main {
+    min-height: 100%;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+
+a:hover {
+    color: #40c9f4;
+}
+
+a:active {
+    color: #0b97c3;
+}
+
+.error {
+    color: red !important;
+    border-color: red !important;
+}
+
+.success {
+    color: #00cc00 !important;
+    border-color: #00cc00 !important;
+}
+
+.disabled {
+    color: #999999 !important;
+    border-color: #999999 !important;
+    cursor: default !important;
+}
+
 fieldset,img {
     border: none;
 }
@@ -102,4 +154,16 @@ img {
 }
 .align-right {
     float: right !important;
+}
+
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,dfn,del,p,blockquote,fieldset,input,textarea,select,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,button,canvas,video {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,th,dfn,del {
+    font-weight: normal;
+    font-style: normal;
+}
+ul,ol {
+    list-style: none;
 }
