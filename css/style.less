@@ -220,7 +220,7 @@ header {
 }
 
 .box-footer {
-       padding: 50px 0 59px; 
+       padding: 39px; 
 
 }
 .forms {
@@ -520,6 +520,7 @@ header {
 
 .bg-green {
         background: url(../images/bg/green2.png) repeat;
+        border-top: 15px solid rgba(255,255,255,0.2);
 }
 
 .bg-red {
@@ -1043,14 +1044,50 @@ header {
 }
 */
 
-@media (max-width: 479px) {
-
-}
-
 /* Smartphones (landscape) ----------- */
 @media only screen
-and (min-width : 321px) {
+and (min-width : 480px) and (max-width : 1024px) {
+    #pricing-bonus p { font-size: 28px; line-height: 34px; }
+.header-wrapper { padding-top: 130px; padding-left: 45px; }
+.header-img { position: absolute; right: 40px; top: 0px; width: 28%; }
+.slide-1 .box-light-content h2 { font-size: 47px; line-height: 54px; }
+header h1 { line-height: 30px; font-size: 1.45em; display: inline-block; }
+header p { font-size: 20px; line-height: 26px; max-width: 400px; display: inline-block; }
+.button-submit { height: auto !important; display: inline-block; padding: 8px 12px; font-size: 31px; }
+.box-light-content h2 { font-size: 56px; }
+.wrap p, .comments .box p { font-size: 20px; line-height: 27px;}
+.box-estimate .phone b { font-size: 35px; }
+footer { padding: 20px 0; } .box-footer { padding: 10px 0 10px;}
+.box-estimate .phone i { font-size: 28px; }
+.box-estimate .phone span { top: 5px;  }
+.box-estimate .phone { padding: 4px 25px 7px 7px; }
+.box-estimate .phone b, .contacts .phone b { font-size: 35px; }
+.box-estimate .phone i, .contacts .phone i { margin-right:10px; font-size: 27px; }
 
+.box-estimate .phone span, .contacts .phone span { font-size: 18px; line-height: 21px; }
+.comments .box { padding: 0 15% 15px; }
+.box-light-content { width: 49%; }
+.box-estimate .phone, .contacts .phone { width: 100%; }
+.comments .box p { font-size: 27px; line-height: 32px; }
+.box-price h5, .box-price h5 span { font-size:28px; }
+.box-price p { font-size: 28px; }
+.comments .box h4 i { display: block; margin: 0 auto; margin-bottom: 25px; max-width:70px; }
+.box-footer .phone { display: inline-block; width: auto; }
+.box-footer .floats { padding: 20px; }
+.promo { padding-top: 20px; padding-bottom: 20px; }
+#btn-es-go { float: none; }
+.top-nav { margin-top: 0px; }
+.promo-column { float: none; display: inline-block; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px; }
+    .img-truck-1 {
+        background-attachment: scroll;
+        background-position: 50% 50%;
+        background-image: url(../images/truck-small.jpg);
+    }
+    .img-blur-1 {
+        background-attachment: scroll;
+        background-position: 50% 50%;
+        background-image: url(../images/guy-small.jpg);
+    }
 }
 
 #pricing-bonus {
@@ -1116,6 +1153,7 @@ and (min-width : 321px) {
     }
 
     .header-wrapper { 
+        padding-left: 20px;
         margin: 40px auto; 
         padding-top: 0px; 
         text-align: center;
