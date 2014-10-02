@@ -16,15 +16,21 @@
   //  padding: 3px 22px 5px 18px;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.3);
     background: desaturate(@red, 10%);
-    border-bottom: 6px solid darken(desaturate(@red, 10%), 15%);
+    border-bottom: 2px solid darken(desaturate(@red, 10%), 15%);
     height: auto;
     .ico { margin-top: 4px; font-size: 28px; display: inline-block; margin-left: 12px; }
+
+
+    &:hover {
+        background: lighten(desaturate(@red, 10%),5%);
+        border-bottom: 6px solid darken(desaturate(@red, 10%), 10%);
+    }
 }
 
 .button {
     color: white;
     background: @green; // #60a450;
-    border-bottom: 5px solid darken(@green, 15%); // #3a7f2a;
+    border-bottom: 2px solid darken(@green, 5%); // #3a7f2a;
     height: 58px;
      border-left: 0; border-right: 0;
     font: 500 36px "Bebas Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -36,6 +42,20 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
+    perspective: 100px;
+    -webkit-perspective: 100px; /* Chrome, Safari, Opera */
+
+    &:hover {
+        background: lighten(@green,5%); // #60a450;
+        border-bottom: 5px solid lighten(darken(@green, 15%),5%); // #3a7f2a;
+        box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+        text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+        -webkit-transform: rotateX(15deg);
+        transform: rotateX(15deg);
+        .ico { text-shadow: 0 4px 10px rgba(0,0,0,0.45); }
+    }
+
     .ico {
         transition: 0.4s ease-in-out all;
         font-size: 28px;
@@ -47,13 +67,7 @@
 
 .ico { display: inline-block; }
 
-.button:hover {
-    background: lighten(@green,5%); // #60a450;
-    border-bottom: 5px solid lighten(darken(@green, 15%),5%); // #3a7f2a;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-    .ico { text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
-}
+
 .button:active {
     background: #0b97c3;
     border-color: #0b97c3;
