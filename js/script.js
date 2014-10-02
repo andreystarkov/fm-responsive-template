@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $.fn.waypoint.defaults = {
+      context: '.main',
+      continuous: true,
+      enabled: true,
+      horizontal: false,
+      offset: 0,
+      triggerOnce: false
+    }
 
     $("body").removeClass("no-js");
 
@@ -31,6 +39,27 @@ $(document).ready(function(){
          $('#estimate').transition({y: '0px'}, 500, 'easeInOutCirc'); alert(direction);
     }, { offset: '20%', triggerOnce: true }); 
 */
+
+     $('.anchor').waypoint(function(direction) {
+        var a = $(this).attr('id');
+
+        $(".top-nav a").transition({ 
+            perspective: '100px', 
+            boxShadow: '0 0 0 rgba(0,0,0,0)', 
+            rotateX: '0deg', 
+            backgroundColor: 'rgba(0,0,0,0)', 
+            borderBottom: '0px solid rgba(0,0,0,0)'
+        });
+
+        $(".top-nav a[href=#"+a+"]").transition({ 
+            perspective: '100px', 
+            rotateX: '10deg', 
+            backgroundColor: '#68ab59', 
+            borderBottom: '6px solid #438435',
+            boxShadow: '0 12px 22px rgba(0,0,0,0.35)'
+        });
+
+    }, {offset: '10px'});
 
 
     $('.header-img').click(function(){

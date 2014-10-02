@@ -29,7 +29,7 @@ $(function() {
 
         var effects = ["fxSoftScale", "fxPressAway", "fxSideSwing", "fxFortuneWheel", "fxSwipe", "fxPushReveal", "fxSnapIn",
         "fxLetMeIn", "fxStickIt", "fxArchiveMe", "fxVGrowth", "fxSlideBehind", "fxSoftPulse", "fxCliffDiving"];
-        var rotateInterval = setInterval(function(){autoInterval()},7000);
+        var rotateInterval = setInterval(function(){autoInterval()},15000);
 
         function init() {
             showNav();
